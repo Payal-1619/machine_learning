@@ -5,7 +5,7 @@
 # 
 # ![](https://i.imgur.com/3sw1fY9.jpg)
 # 
-# In this assignment, you'll continue building on the previous assignment to predict the price of a house using information like its location, area, no. of rooms etc. You'll use the dataset from the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on [Kaggle](https://kaggle.com). 
+# In this assignment, we'll continue building on the previous assignment to predict the price of a house using information like its location, area, no. of rooms etc. We'll use the dataset from the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on [Kaggle](https://kaggle.com). 
 # 
 # We'll follow a step-by-step process:
 # 
@@ -15,34 +15,7 @@
 # 4. Tune hyperparameters to improve the model
 # 5. Make predictions and save the model
 # 
-# As you go through this notebook, you will find a **???** in certain places. Your job is to replace the **???** with appropriate code or values, to ensure that the notebook runs properly end-to-end and your machine learning model is trained properly without errors. 
-# 
-# **Guidelines**
-# 
-# 1. Make sure to run all the code cells in order. Otherwise, you may get errors like `NameError` for undefined variables.
-# 2. Do not change variable names, delete cells, or disturb other existing code. It may cause problems during evaluation.
-# 3. In some cases, you may need to add some code cells or new statements before or after the line of code containing the **???**. 
-# 4. Since you'll be using a temporary online service for code execution, save your work by running `jovian.commit` at regular intervals.
-# 5. Review the "Evaluation Criteria" for the assignment carefully and make sure your submission meets all the criteria.
-# 6. Questions marked **(Optional)** will not be considered for evaluation and can be skipped. They are for your learning.
-# 7. It's okay to ask for help & discuss ideas on the [community forum](https://jovian.ai/forum/c/zero-to-gbms/gbms-assignment-2/99), but please don't post full working code, to give everyone an opportunity to solve the assignment on their own.
-# 
-# 
-# **Important Links**:
-# 
-# - Make a submission here: https://jovian.ai/learn/machine-learning-with-python-zero-to-gbms/assignment/assignment-2-decision-trees-and-random-forests
-# - Ask questions, discuss ideas and get help here: https://jovian.ai/forum/c/zero-to-gbms/gbms-assignment-2/99
-# - Review this Jupyter notebook: https://jovian.ai/aakashns/sklearn-decision-trees-random-forests
-# 
 
-# ## How to Run the Code and Save Your Work
-# 
-# **Option 1: Running using free online resources (1-click, recommended):** The easiest way to start executing the code is to click the **Run** button at the top of this page and select **Run on Binder**. This will set up a cloud-based Jupyter notebook server and allow you to modify/execute the code.
-# 
-# 
-# **Option 2: Running on your computer locally:** To run the code on your computer locally, you'll need to set up [Python](https://www.python.org), download the notebook and install the required libraries. Click the **Run** button at the top of this page, select the **Run Locally** option, and follow the instructions.
-# 
-# **Saving your work**: You can save a snapshot of the assignment to your [Jovian](https://jovian.ai) profile, so that you can access it later and continue your work. Keep saving your work by running `jovian.commit` from time to time.
 
 # In[7]:
 
@@ -401,9 +374,8 @@ jovian.commit()
 
 # ## Hyperparameter Tuning
 # 
-# Let us now tune the hyperparameters of our model. You can find the hyperparameters for `RandomForestRegressor` here: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+# Let us now tune the hyperparameters of our model. We can find the hyperparameters for `RandomForestRegressor` here: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
 # 
-# <img src="https://i.imgur.com/EJCrSZw.png" width="480">
 # 
 # Hyperparameters are use
 
@@ -630,16 +602,7 @@ jovian.commit()
 jovian.submit('zerotogbms-a2')
 
 
-# You can also submit your Jovian notebook link on the assignment page: https://jovian.ai/learn/machine-learning-with-python-zero-to-gbms/assignment/assignment-2-decision-trees-and-random-forests
-# 
-# Make sure to review the evaluation criteria carefully. You can make any number of submissions, and only your final submission will be evalauted.
-# 
-# Ask questions, discuss ideas and get help here: https://jovian.ai/forum/c/zero-to-gbms/gbms-assignment-2/99
-# 
-# NOTE: **The rest of this assignment is optional.**
 
-# ## Making Predictions on the Test Set
-# 
 # Let's make predictions on the test set provided with the data.
 
 # In[ ]:
@@ -717,16 +680,6 @@ FileLink('submission.csv') # Doesn't work on Colab, use the file browser instead
 # 
 # ![](https://i.imgur.com/6h2vXRq.png)
 # 
-
-# > **(OPTIONAL) QUESTION**: Submit your predictions to the competition. Experiment with different models, feature engineering strategies and hyperparameters and try to reach the top 10% on the leaderboard.
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
@@ -837,23 +790,12 @@ joblib.dump(house_prices_rf, 'house_prices_rf.joblib')
 jovian.commit(outputs=['house_prices_rf.joblib'])
 
 
-# In[ ]:
 
 
 
 
 
-# ### Predicting the Logarithm of Sale Price
 
-# > **(OPTIONAL) QUESTION**: In the [original Kaggle competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview/evaluation), the model is evaluated by computing the Root Mean Squared Error on the logarithm of the sale price. Try training a random forest to predict the logarithm of the sale price, instead of the actual sales price and see if the results you obtain are better than the models trained above.
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
