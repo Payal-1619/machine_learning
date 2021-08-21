@@ -5,7 +5,7 @@
 # 
 # ![](https://i.imgur.com/3sw1fY9.jpg)
 # 
-# In this assignment, you're going to predict the price of a house using information like its location, area, no. of rooms etc. You'll use the dataset from the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on [Kaggle](https://kaggle.com). We'll follow a step-by-step process to train our model:
+# In this assignment, we're going to predict the price of a house using information like its location, area, no. of rooms etc. We'll use the dataset from the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on [Kaggle](https://kaggle.com). We'll follow a step-by-step process to train our model:
 # 
 # 1. Download and explore the data
 # 2. Prepare the dataset for training
@@ -521,8 +521,7 @@ inputs_df[categorical_cols].nunique().sort_values(ascending=False)
 # One hot encoding involves adding a new binary (0/1) column for each unique category of a categorical column.
 
 # > **QUESTION 7**: Encode categorical columns in the dataset as one-hot vectors using `OneHotEncoder` from `sklearn.preprocessing`. Add a new binary (0/1) column for each category
-# > 
-# > *Hint*: See [this notebook](https://jovian.ai/aakashns/python-sklearn-logistic-regression/v/66#C122).
+# 
 
 # In[127]:
 
